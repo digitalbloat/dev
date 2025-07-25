@@ -11,7 +11,7 @@ cd "$SCRIPT_DIR" || { echo "Error: Cannot access script directory"; exit 1; }
 # Dotfiles
 DOTFILES_DIR="dotfiles"
 cp ~/.zshrc "$SCRIPT_DIR/$DOTFILES_DIR/.zshrc"
-cp r ~/.config/nvim "$SCRIPT_DIR/$DOTFILES_DIR/.config"
+cp -r ~/.config/nvim "$SCRIPT_DIR/$DOTFILES_DIR/.config"
 
 # Stage all changes
 git add .
