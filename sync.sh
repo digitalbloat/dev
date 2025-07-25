@@ -9,7 +9,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR" || { echo "Error: Cannot access script directory"; exit 1; }
 
 # Dotfiles
-DOTFILES_DIR = "dotfiles"
+DOTFILES_DIR="dotfiles"
 cp ~/.zshrc "$SCRIPT_DIR/$DOTFILES_DIR/zshrc"
 
 # Stage all changes
